@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Flash.moe / WHOIS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="whois.css" />
+    </head>
+    <body>
+        <div id="whoisContainer">
+			<div class="header">
+				<div class="logo">Flash.moe / WHOIS</div>
+				<div class="menu">
+					<a href="http://flash.moe">index</a>
+					<a href="http://blog.flash.moe">blog</a>
+					<a href="http://forum.flash.moe">forum</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+            <div class="whoisSubmit">
+                <form method="post" action="">
+                    <input type="text" name="domain" id="domain" placeholder="Target Address (e.g. google.com)" /> <input type="submit" value="Submit" />
+                </form>
+            </div>
+            <div id="whoisResult">{{ RESPONSE }}</div>
+            <div id="copyright">
+                <a href="https://github.com/flashwave/whois-php" target="_blank">Flash.moe Whois</a> &copy; <a href="http://flash.moe" target="_blank">Flashwave</a> 2015. Released under the MIT-License.
+            </div>
+        </div><br />
+    </body>
+</html>
