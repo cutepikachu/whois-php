@@ -1,0 +1,23 @@
+{
+    "name": "flashwave/whois-php",
+    "description": "Whois client library for PHP",
+    "keywords": ["flashwave", "whois", "php"],
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/flashwave/whois-php/issues",
+        "source": "https://github.com/flashwave/whois-php"
+    },
+    "authors": [
+        {
+            "name": "Julian van de Groep",
+            "email": "me@flash.moe",
+            "homepage": "https://flash.moe"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Whois\\": "src/Whois/"
+        }
+    }
+}
