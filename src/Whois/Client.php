@@ -109,7 +109,7 @@ class Client
                 preg_match("/whois server: (.*)/", strtolower($response), $matches);
 
                 // Set the secondary server
-                $second = $matches[1];
+                $second = trim($matches[1]);
 
                 // Check if it's not the same server
                 if (trim(strtolower($server)) !== $second) {
