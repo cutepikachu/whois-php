@@ -3,7 +3,7 @@ namespace Whois;
 
 class Servers
 {
-    public static $tld = [
+    public $tld = [
         "abogado" => "whois.nic.ac",
         "ac" => "whois.nic.ac",
         "academy" => "whois.donuts.co",
@@ -600,7 +600,7 @@ class Servers
         "香港" => "whois.hkirc.hk",
     ];
 
-    public static $ip = [
+    public $ip = [
         "whois.lacnic.net",
         "whois.apnic.net",
         "whois.arin.net",

@@ -24,7 +24,7 @@ class Client
         }
 
         // Apply the servers
-        $this->servers = $servers;
+        $this->servers = new $servers;
     }
 
     /**
@@ -69,8 +69,8 @@ class Client
             $tld = implode($targetSplit, '.');
 
             // Check if it exists in the tld servers variable
-            if (array_key_exists($tld, $this->servers::$tld)) {
-                $server = $this->servers::$tld[$tld];
+            if (array_key_exists($tld, $this->servers->tld)) {
+                $server = $this->servers->tld[$tld];
                 break;
             }
 
@@ -148,7 +148,7 @@ class Client
         $responses = [];
 
         // Query every server in the IP list
-        foreach ($this->servers::$ip as $server) {
+        foreach ($this->servers->ip as $server) {
             // Check if we haven't queried this server yet
             if (array_key_exists($server, $responses)) {
                 continue;
