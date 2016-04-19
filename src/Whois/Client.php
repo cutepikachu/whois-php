@@ -108,11 +108,11 @@ class Client
                 // Grab the uri from the response
                 preg_match("/whois server: (.*)/", strtolower($response), $matches);
 
-                // Set the secondary server
-                $second = trim($matches[1]);
-
                 // Check if it's not the same server
-                if (trim(strtolower($server)) !== $second) {
+                if (isset($matches[1]) && trim(strtolower($server)) !== trim($matches[1])) {
+                    // Set the secondary server
+                    $second = trim($matches[1]);
+
                     // Do a query
                     $response = $this->query($target, $second);
 
