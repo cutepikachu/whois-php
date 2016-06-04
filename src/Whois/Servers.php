@@ -304,6 +304,7 @@ class Servers
         "loans" => "whois.donuts.co",
         "london" => "whois-lon.mm-registry.com",
         "lotto" => "whois.afilias.net",
+        "love" => "whois.nic.love",
         "lt" => "whois.domreg.lt",
         "ltda" => "whois.afilias-srs.net",
         "lu" => "whois.dns.lu",
