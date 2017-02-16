@@ -5,6 +5,7 @@
     "type": "library",
     "license": "MIT",
     "support": {
+        "email": "me@flash.moe",
         "issues": "https://github.com/flashwave/whois-php/issues",
         "source": "https://github.com/flashwave/whois-php"
     },
@@ -19,5 +20,8 @@
         "psr-4": {
             "Whois\\": "src/Whois/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.5.*"
     }
 }
